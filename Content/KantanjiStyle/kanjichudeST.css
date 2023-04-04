@@ -1,0 +1,96 @@
+﻿
+.topic {
+    height: 185px;
+    width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    background-color: #faf7f9;
+    border-radius: 5px;
+    display: flex;
+    
+}
+
+.anh {
+    width: 25%;
+    height: 100%;
+    background-color: #faf7f9;
+    display: block;
+    float: left
+}
+
+    .anh img {
+        width: 90%;
+        height: 90%;
+        border: 3px solid #8aa2a5;
+        border-radius: 5px;
+        margin-left: 10px;
+        margin-top: 10px;
+    }
+
+.menu_CD {
+    width: 73%;
+    height: 90%;
+    background-color: none;
+    border-radius: 5px;
+    margin-top: 7px;
+}
+
+.ten_CD {
+    background-color: #e8ecee;
+    width: 380px;
+    border-radius: 5px;
+    font-family:'Open Sans';
+    font-size: 13.5px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    text-align: center;
+}
+
+.ten_CD > h1 {
+   
+    font-family: 'Open Sans';
+    font-size: 29px;
+   
+}
+
+
+.text_lv {
+   
+}
+
+    .text_lv h3 {
+        margin-left: 250px;
+        font-family: 'Open Sans';
+        font-size: 18px;
+       
+        font-weight: bold;
+    }
+
+
+.menu_lv {
+    height: 50px;
+    width: 450px;
+    background-color: none;
+    margin-top: 20px;
+    margin-left: 100px;
+}
+
+    .menu_lv a {
+        margin-top: 35px;
+        background: white;
+        color: #8ad2cf;
+        border-radius: 5px;
+        border: 0.5px solid #A9A9A9;
+        text-align: center;
+        text-decoration: none;
+        padding: 7px 15px;
+        font-size: 20px;
+        margin-right: 7px;
+    }
+
+        .menu_lv a:hover {
+            background: #8ad2cf;
+            color: white;
+        }

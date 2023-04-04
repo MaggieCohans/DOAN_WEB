@@ -1,0 +1,87 @@
+﻿
+@{
+    ViewBag.Title = "Cautruc";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="~/Content/KantanjiStyle/CauTruc.css">
+    <title>View cau truc de thi</title>
+</head>
+<body>
+    <div class="container">
+        <!--Phần 01-->
+        <div class="header-CauTruc phan1">
+            <div class="phan1-header">
+                <div class="Phan1-header-01">
+                    <h1>日本語　テスト</h1>
+                </div>
+                <hr style="margin: -2px; border: 2px solid black;">
+                <div class="Phan1-header-02">
+                    <h2>Cấu trúc đề thi chứng chỉ tiếng Nhật</h2>
+                </div>
+            </div>
+
+            <div class="phan1ND-trai">
+                <p>Điều quan trọng trước khi đi thi là phải nắm rõ được cấu trúc đề thi để có hướng phân bổ thời gian làm bài cho hợp lý. Cùng tìm hiểu chi tiết cấu trúc đề thi JLPT tiếng Nhật để nắm rõ hơn nhé!</p>
+            </div>
+
+            <div class="phan1ND-phai">
+                <img src="~/Content/img/CauTruc/cautructhi.png" alt="Phan Dong" style="width:80%">
+            </div>
+        </div>
+        <!--End phần 01-->
+
+        <div class="PhanDong">
+            <hr style="margin: 2px; border: 2px solid black;">
+        </div>
+        <!--Phan 2-->
+
+        <div class="header-CauTruc phan2">
+            <h2>NỘI DUNG ĐỀ THI</h2>
+            <p style="color: orangered; font-size: 50px; margin-top: -40px; ">-----</p>
+
+            <div class="slideshow-container">
+
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="~/Content/img/CauTruc/layout-chude-TVDH.png" style="width:40%">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="~/Content/img/CauTruc/layout-chude-doc.png" style="width:40%">
+                </div>
+
+                <div class="mySlides fade">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="~/Content/img/CauTruc/layout-chude-NGHE.png" style="width:40%">
+                </div>
+
+            </div>
+            <br>
+
+            <div style="text-align:center">
+                <span class="dot"></span>
+                <span class="dot"></span>
+                <span class="dot"></span>
+            </div>
+            <button type="button" id="btn" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal"><b>Tiếp tục</b></button>
+            @Html.Action("XacMinh", "kantanji")
+        </div>
+        <!--end phan 2-->
+
+    </div>"
+    <script src="~/Scripts/KantanjiJS/CauTruc.js"></script>
+</body>
+</html>
+

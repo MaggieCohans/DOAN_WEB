@@ -1,0 +1,29 @@
+﻿
+<style>
+    .Log_in {
+        margin-left: 985px;
+        margin-top: 20px;
+    }
+
+    .dx {
+        width: 100px;
+        margin-left: 20px;
+    }
+
+</style>
+
+<div class="Log_in">
+    <a style="color: #ffffff;" href="@Url.Action("Login","User",new { })"> @ViewBag.TenDN</a>
+
+    @*Là điều kiện để hiện nút đăng xuất*@
+    @if (Session["Taikhoan"] != null)
+        {
+            //Hiện nút đăng xuất
+            <a style="color: #ffffff;" href="@Url.Action("Logout", "User")" class="dx">Đăng xuất</a>
+        }
+</div>
+
+
+
+
+

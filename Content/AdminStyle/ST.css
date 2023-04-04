@@ -1,0 +1,12 @@
+﻿.narbar-inverse {
+    background-color: #346176;
+    border-color: #fbf6f6;
+}
+
+    .narbar-inverse .navbar-nav > li > a {
+        color: white;
+    }
+
+    .narbar-inverse .narbar-brand {
+        color: white;
+    }

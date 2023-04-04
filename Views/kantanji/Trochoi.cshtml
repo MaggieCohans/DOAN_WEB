@@ -1,0 +1,94 @@
+﻿
+@{
+    ViewBag.Title = "Trochoi";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <title>Trò Chơi Đánh Chữ</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <style>
+        body {
+            background: -webkit-linear-gradient(to right, #667db6, #0082c8, #0082c8, #667db6);
+        }
+
+        .tro_choi_danh_chu {
+            margin-left: 15px;
+            padding: 30px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+          
+            margin-top:40px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.3);
+        }
+
+        .noi_dung {
+            width: 80%;
+            width: 900px;
+            background: #fff;
+            border-radius: 10px;
+            text-align: center;
+        }
+       
+    </style>
+    <div class="tro_choi_danh_chu">
+        <div class="noi_dung shadow p-3">
+            <header class="text-center">
+                <h1><i class="fa fa-gamepad" aria-hidden="true"></i> Trò Chơi Đánh Chữ</h1>
+            </header>
+            <div class="row">
+                <div class="col-md-6 mx-auto">
+                    <p class="quy_dinh">
+                        Các bạn hãy đánh chữ dưới đây với thời gian đối đa <span class="text-success" id="thoi_gian">10</span> giây:
+                    </p>
+                    <h2 class="display-2 mb-2" id="chu_hien_tai">Xin Chào!</h2>
+                   <input type="text" class="form-control form-control-lg rounded-pill shadow p-4"placeholder="Bắt Đầu Nhập Chữ..." id="chu_duoc_nhap" autofocus style="margin-left:100px;">
+                    <h4 class="mt-2" id="thong_bao"></h4>
+                    <div class="row mt-4">
+                        <div class="col-md-6">
+                            <h3>
+                                Thời Gian Còn Lại:<br />
+                                <span id="giay">0</span>
+                            </h3>
+                        </div>
+                        <div class="col-md-6">
+                            <h3>
+                                Điểm Của Bạn:<br />
+                                <span id="diem">0</span>
+                            </h3>
+                        </div>
+                    </div>
+                    <div class="text-center bg-primary shadow text-white p-2 rounded mb-4" style="padding:10px;">
+                        <h4><i class="fa fa-info-circle" aria-hidden="true"></i> Hướng Dẫn</h4>
+                        <p>
+                            Các bạn nhập mỗi chữ ở trên với thời gian không được vượt quá 10 giây. Để chơi lại thì bạn chỉ cần nhập chữ đang hiển thị hiện tại và điểm sẽ tự động được tính lại.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+    <script src="~/Scripts/KantanjiJS/danhchu.js"></script>
+
+</body>
+</html>
+

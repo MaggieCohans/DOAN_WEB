@@ -1,0 +1,53 @@
+﻿@model  List<DOAN_WEB.Models.KantanjiModel.CHUDECHINH>
+@{
+    ViewBag.Title = "ChuDe";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link href="~/Content/KantanjiStyle/kanjichudeST.css" rel="stylesheet" />
+</head>
+<body>
+    <div style="margin-top:35px;">
+        @foreach (var item in Model)
+        {
+            <div class=" topic">
+
+                <div class="anh">
+                    <a href="#" class="anh_CD"><img src="~/Content/img/CD/@item.LINKANH"></a>
+                </div>
+
+                <div class="menu_CD">
+                    <div class="ten_CD">
+                        <h1>@item.TENCHUDE</h1>
+                    </div>
+
+                    <div class="text_lv">
+                        <hr />
+                        <h3>レべル</h3>
+                    </div>
+                    <div class="menu_lv">
+                        @Html.Action("Cap_Do", "kantanji", new {item.IDCHUDE})
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+
+</body>
+</html>
+
+
+
+

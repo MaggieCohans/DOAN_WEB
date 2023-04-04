@@ -1,0 +1,43 @@
+﻿@model DOAN_WEB.Models.KantanjiModel.USER
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>USER</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.TAIKHOAN)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TAIKHOAN)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ENPASSWORD)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ENPASSWORD)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TYPE)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TYPE)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IDUSER }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

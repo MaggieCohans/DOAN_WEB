@@ -1,0 +1,28 @@
+﻿<head>
+    <link href="~/Content/KantanjiStyle/user.css" rel="stylesheet" />
+</head>
+
+    <h2 style="text-align:center; margin-top:100px;">Đăng Nhập</h2>
+    <h4 style="color:red;text-align:center">@ViewBag.Thongbao</h4>
+    @using (Html.BeginForm())
+    {
+        @Html.ValidationSummary(true);
+        <div class="form">
+            <div class="tk">
+                <label for="name">Tài khoản:</label>
+                <input style="margin-left: 30px;" type="text" name="name" id="name" />
+                <p class="error">@ViewData["Loi1"]</p>
+            </div>
+            <div class="mk">
+                <label for="pass">Mật khẩu:</label>
+                <input style="margin-left: 30px;" type="password" name="pass" id="pass" />
+                <p class="error">@ViewData["Loi3"]</p>
+            </div>
+            @* nút đăng nhập và nút đăng ký *@
+            <div class="dn_dk">
+                @*<a href="#">Đăng Nhập</a>*@
+                <input style="padding:10px 20px;" type="submit" value="Đăng Nhập" class="inp" />
+
+            </div>
+        </div>
+    }

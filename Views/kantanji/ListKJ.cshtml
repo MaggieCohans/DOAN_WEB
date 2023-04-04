@@ -1,0 +1,66 @@
+﻿@model IEnumerable<DOAN_WEB.Models.KantanjiModel.KANJI>
+
+@{
+    ViewBag.Title = "ListKJ";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@*<h2>ListKJ</h2>
+<table class="table">
+    <tr>
+        <th>
+            <span>Từ Kanji</span>
+        </th>
+        <th>
+            <span>Hán Việt</span>
+        </th>
+        <th>
+            <span>Nghĩa</span>
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.TUKANJI)
+            </td>
+
+            <td>
+                @Html.DisplayFor(modelItem => item.HANVIET)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NGHIA)
+            </td>
+            <td>
+                @Html.ActionLink("ChitietKJ", "ChitietKJ", new { id = item.IDKANJI }) |
+            </td>
+        </tr>
+    }
+</table>*@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <link href="~/Content/KantanjiStyle/ListKanji.css" rel="stylesheet" />
+</head>
+<body>
+    <div id="main" style="margin-bottom:150px;">
+
+        @foreach (var item in Model)
+        {
+            <h3><span><b>@Html.DisplayFor(modelItem => item.NGUCANH.TENNGUCANH)</b></span></h3>
+            <hr />
+            <div class="kanji_inner">
+                <ul>
+                    <li>
+                        @Html.DisplayFor(modelItem => item.TUKANJI)
+                        @Html.ActionLink(".", "ChitietKJ", new { id = item.IDKANJI })
+                    </li>
+                </ul>
+            </div>
+        }
+    </div>
+</body>
+</html>

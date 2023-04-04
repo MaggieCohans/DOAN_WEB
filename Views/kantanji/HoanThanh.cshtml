@@ -1,0 +1,49 @@
+﻿
+@{
+    ViewBag.Title = "HoanThanh";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Congratulations Animation Example</title>
+    <meta name="author" content="Codeconvey" />
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css'>
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="~/Content/KantanjiStyle/style_congratulation.css">
+
+    <!--Only for demo purpose - no need to add.-->
+</head>
+<body>
+
+    <section style="height:500px;">
+
+        <div class="rt-container">
+            <div class="col-rt-12">
+                <div class="Scriptcontent">
+
+                    <!-- DEMO CONTENT -->
+                    <div class="congrats">
+                        <h1>Congratulations!</h1>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+    <a href="@Url.Action("Home", "kantanji")" style="background-color:#b200ff; border:none; margin-top:200px; padding:15px; border-radius:5px;"><b>BACK TO HOME</b></a>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.2/underscore-min.js'></script>
+    <script src="~/Scripts/KantanjiJS/congratulation.js"></script>
+
+    <!-- ANALYTICS -->
+
+</body>
+</html>
+

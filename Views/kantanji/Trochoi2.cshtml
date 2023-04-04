@@ -1,0 +1,95 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href='styde.css'>
+    <link href="~/Content/KantanjiStyle/LatHinh.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Game-latHinh</title>
+</head>
+<body>
+    <!-- <div class="countdown">
+
+        <button id ="btn-refresh" value="Refresh Page" onClick="window.location.reload();">Refresh</button>
+    </div> -->
+    <div class="container">
+        <div class="subContainer">
+            <form id="numbersForm">
+                <input id="minutesInput" type="number" min="0" placeholder="Minutes">
+                <span id="colonStyle" class="colon">:</span>
+                <input id="secondsInput" type="number" min="0" max="60" maxlength="2" step="5" placeholder="Seconds" value="">
+            </form>
+            <form>
+                <input id="startButton" type="button" placeholder="Start" value="Start">
+                <span class="colon">&nbsp;</span>
+                <input id="resetButton" type="button" placeholder="reset" value="Reset">
+            </form>
+        </div>
+        <progress id="progressBar" max="0" value="0" class="progress_styled"></progress>
+        <a href="@Url.Action("LuyenTap", "kantanji")"><i class="fa fa-arrow-circle-left" style="font-size: 36px; margin-top: 15px;"></i></a>
+    </div>
+   
+    <section id="game">
+       
+        <div class="card" data-name="zeus">
+            <img src="~/Content/img/LatHinh/1.png" alt="" class="frontface">
+            <img src="~/Content/img/LatHinh/sushi.png" alt="" class="backface">
+        </div>
+        <div class="card" data-name="aphrodite">
+            <img src="~/Content/img/LatHinh/2.png" alt="" class="frontface">
+            <img src="~/Content/img/LatHinh/sushi.png" alt="" class="backface">
+        </div>
+        <div class="card" data-name="apollo">
+            <img src="~/Content/img/LatHinh/3.png" alt="" class="frontface">
+            <img src="~/Content/img/LatHinh/sushi.png" alt="" class="backface">
+        </div>
+        <div class="card" data-name="athena">
+            <img src="~/Content/img/LatHinh/4.png" alt="" class="frontface">
+            <img src="~/Content/img/LatHinh/sushi.png" alt="" class="backface">
+        </div>
+        <div class="card" data-name="hades">
+            <img src="~/Content/img/LatHinh/5.png" alt="" class="frontface">
+            <img src="~/Content/img/LatHinh/sushi.png" alt="" class="backface">
+        </div>
+
+        <div class="card" data-name="poseiden">
+            <img src="~/Content/img/LatHinh/6.png" alt="" class="frontface">
+            <img src="~/Content/img/LatHinh/sushi.png" alt="" class="backface">
+        </div>
+        <div class="card" data-name="zeus">
+            <img src="~/Content/img/LatHinh/1.png" alt="" class="frontface">
+            <img src="~/Content/img/LatHinh/sushi.png" alt="" class="backface">
+        </div>
+        <div class="card" data-name="aphrodite">
+            <img src="~/Content/img/LatHinh/2.png" alt="" class="frontface">
+            <img src="~/Content/img/LatHinh/sushi.png" alt="" class="backface">
+        </div>
+        <div class="card" data-name="apollo">
+            <img src="~/Content/img/LatHinh/3.png" alt="" class="frontface">
+            <img src="~/Content/img/LatHinh/sushi.png" alt="" class="backface">
+        </div>
+        <div class="card" data-name="athena">
+            <img src="~/Content/img/LatHinh/4.png" alt="" class="frontface">
+            <img src="~/Content/img/LatHinh/sushi.png" alt="" class="backface">
+        </div>
+        <div class="card" data-name="hades">
+            <img src="~/Content/img/LatHinh/5.png" alt="" class="frontface">
+            <img src="~/Content/img/LatHinh/sushi.png" alt="" class="backface">
+        </div>
+
+        <div class="card" data-name="poseiden">
+            <img src="~/Content/img/LatHinh/6.png" alt="" class="frontface">
+            <img src="~/Content/img/LatHinh/sushi.png" alt="" class="backface">
+        </div>
+    </section>
+   
+    <script src="~/Scripts/KantanjiJS/LatHinh.js"></script>
+</body>
+</html>

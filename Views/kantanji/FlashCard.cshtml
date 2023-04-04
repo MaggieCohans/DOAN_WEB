@@ -1,0 +1,104 @@
+﻿@model  List<DOAN_WEB.Models.KantanjiModel.FLASHCARD>
+@{
+    ViewBag.Title = "FlashCard";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="~/Content/KantanjiStyle/FlashCardStyle.css" rel="stylesheet" />
+    <link href="~/Content/KantanjiStyle/FlippingFCStyle.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+        <div class="wrapper">
+            <div class="container">
+                <div class="content">
+                    @Html.Action("MenuChuyenNganh", "kantanji")
+
+                    <div class="main">
+                        @*  *@
+                        <h2 style="color: #07575B" class="title">@ViewBag.TenCN</h2>
+                        <div class="main-content">
+                            <div class="sentence">
+                                <p style="color:#07575B">=> Số câu:1/10</p>
+                                <h4 class="correct" style="cursor:pointer">Số câu đúng: 0</h4>
+                                <h4 class="incorrect" style="cursor:pointer">Số câu sai: 0</h4>
+
+                            </div>
+                            <div class="flass-cards">
+                                <div class="flass-card">
+
+                                    @foreach (var item in Model)
+                                    {
+                                        <div class="flass-card-item">
+
+                                            <div class="main_card">
+                                                <div class="card">
+                                                    <div class="card--front">
+                                                        <h2>
+                                                            @item.MATTRUOC
+                                                        </h2>
+
+                                                    </div>
+                                                    <div class="card--back">
+                                                        <h3>
+                                                            @item.MATSAU
+                                                        </h3>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <i class="fa fa-volume-up sound" aria-hidden="true"></i>
+                                            <audio src="m2.mp3" id="song"></audio>
+                                        </div>
+                                    }
+
+                                    @*Flash Card chúc mừng*@
+                                    <div class="flass-card-item">
+
+                                        <div class="main_card">
+                                            <div class="card">
+                                                <div class="card--front">
+                                                    <h2>
+                                                        KẾT THÚC!
+                                                    </h2>
+
+                                                </div>
+                                                <div class="card--back">
+                                                    <h3>
+                                                        Chúc mừng bạn đã hoàn thành
+                                                    </h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <i class="fa fa-volume-up sound" aria-hidden="true"></i>
+                                        <audio src="m2.mp3" id="song"></audio>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="slider-next"><i class="fa fa-angle-right "></i></div>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <script src="~/Scripts/KantanjiJS/flashCardScripts.js"></script>
+    </body>
+</html>
+
+

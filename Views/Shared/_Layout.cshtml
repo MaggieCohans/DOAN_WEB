@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <link rel="stylesheet" href="~/Content/KantanjiStyle/Layout.css">
+    <link rel="stylesheet" href="~/Content/KantanjiStyle/mycss.css">
+
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top" style="background-color: #346176; ">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse" title="more options">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="logo">
+                    <img style="width: 90px; height: 60px; padding: 10px;" class="anhlogo" src="~/Content/img/logo-removebg-preview (1).png" />
+                </div>
+                @*@Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })*@
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li>@Html.ActionLink("Home", "Home", "kantanji")</li>
+                    <li class="dropdown">
+                        <button class="dropbtn">Luyện Thi</button>
+
+                        <div class="dropdown-content">
+                            <a href="@Url.Action("ChuDe", "kantanji")">Chủ Đề</a>
+                            <a href="@Url.Action("LuyenTap", "kantanji")">Luyện Tập</a>
+                            <a href="@Url.Action("FlashCard","kantanji",new {id = 1 })">Flashcard </a>
+                        </div>
+                    </li>
+                    <li>@Html.ActionLink("FAQ", "FAQ", "kantanji")</li>
+                    <li><a href="@Url.Action("CauTruc", "kantanji")" style=" border-radius: 11px; background-color: orangered; margin: 10px 0px 0px 22px; padding: 5px 27px; color: white; border: 0.5px solid yellow; ">Thi ngay</a></li>
+                </ul>
+                @*@Html.Partial("_LoginPartial")*@
+                @Html.Action("LoginPartial", "User")
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+
+    </div>
+    <hr />
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <h3>Download Our App</h3>
+                        <p>Download App for Android and IOS mobile phone</p>
+                        <div class="app-logo">
+                            <img src="~/Content/img/play-store.png">
+                            <img src="~/Content/img/app-store.png">
+                        </div>
+
+                    </div>
+
+
+                    <!--Userful footer-->
+                    <div class="footer-col-3">
+                        <h3>Thông tin liên hệ</h3>
+                        <ul>
+                            <li>Hotline: 0794268828</li>
+                            <li>Email: kantanji@gmail.com</li>
+                            <li>Cơ sở 1: 137 Điện Biên Phủ, Đa Kao, Quận 1, Tp. HCM</li>
+                            <li>Cơ sở 2: 148/1 Đ. Hoàng Diệu 2, Phường Linh Chiểu, Thủ Đức, Tp. HCM</li>
+                        </ul>
+                    </div>
+                    <!-- Follow us-->
+                    <div class="footer-col-4">
+                        <h3>Follow us</h3>
+                        <ul>
+                            <li>FaceBook</li>
+                            <li>Twitter</li>
+                            <li>Instagram</li>
+                            <li>Youtube</li>
+                        </ul>
+                    </div>
+                </div>
+                <hr>
+                <p class="copyright">&copy; @DateTime.Now.Year - Copyright 2021- KANTANJI </p>
+            </div>
+        </div>
+
+    </footer>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

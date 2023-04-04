@@ -1,0 +1,28 @@
+﻿hr {
+    border: 0;
+    border-top: 5px solid black;
+    border-bottom: 1px solid black;
+    padding: 5px 0;
+}
+    hr.style4 {
+        border-top: 1px dotted #8c8b8b;
+    }
+
+h3{
+
+    font-size:35px;
+}
+.kanji_inner{
+    margin-top:25px;
+}
+.kanji_inner ul li {
+    display: inline-block;
+    border: 1px solid black;
+    padding: 15px 20px;
+    background-color:white;
+    font-size: 23px;
+    font-weight:bold;
+    margin-right:9px;
+    
+   
+}

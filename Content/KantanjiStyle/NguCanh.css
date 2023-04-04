@@ -1,0 +1,32 @@
+﻿
+.NC_list {
+    margin-top:55px;
+    margin-left: 72px;
+}
+
+.NC_link {
+    margin-left: 72px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    
+}
+    .NC_link .ngucanh {
+        margin: 15px;
+        border-style: solid;
+        border-color: #07575B;
+        border-radius: 7px;
+        padding-block: 40px;
+        width: calc(100% / 5);
+        display: flex;
+        justify-content: center;
+        color: black;
+        background-color: azure;
+        float: left;
+        display: inline-flex;
+    }
+.ngucanh  img{
+    width:85px;
+    height:85px;
+    object-fit:cover;
+}

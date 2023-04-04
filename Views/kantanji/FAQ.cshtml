@@ -1,0 +1,85 @@
+﻿
+@{
+    ViewBag.Title = "FAQ";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+
+    @*<link rel="stylesheet" href="lundev.css">*@
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="~/Content/KantanjiStyle/FAQ.css">
+    <title>My first Website</title>
+</head>
+<body>
+    <div class="contact">
+
+        <form class="Gop-y" action="https://formsubmit.co/Kantanji2122@gmail.com" method="POST">
+            <div class="title-1"><h3>Góp ý</h3></div>
+            <div class="inf_content">
+                <div class="Name">
+                    <h4>Họ tên</h4>
+                    <input name="Name" type="text" placeholder="Tên của bạn" required />
+                </div>
+                <div class="SDT">
+                    <h4>Email</h4>
+                    <input type="email" name="Email" placeholder="Nhập địa chỉ Email" required />
+                </div>
+            </div>
+            <div class="ND-gop-y">
+                <h4>Nội dung</h4>
+                <div> <input name="Messenger" type="text" placeholder="Nội dung góp ý" required></input></div>
+            </div>
+            <button type="submit">Gửi </button>
+        </form>
+
+
+        <div class="lien-he">
+            <div class="leftside">
+                <div class="img">
+                    <img src="~/Content/img/logo-removebg-preview (1).png" />
+                </div>
+                <h4><b>Website Kantanji</b></h4>
+                <div>"KANTANJI"- phá vỡ rào cản" trong việc học kanji của sinh viên</div>
+            </div>
+            <div class="rightside">
+                <div class="title-1"><h3>Liên hệ</h3></div>
+                <address>
+                    <div class="A1">
+                        <i class="fa-solid fa-phone"></i>
+                        <div>
+                            <li><a href="">1800 0000</a><li />
+                            <li><a href="">1800 0001</a><li />
+
+
+                        </div>
+                    </div>
+                    <div class="A2">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <li><a href="">475A Điện Biên Phủ Q. Bình Thạnh, Ho Chi Minh City, Vietnam</a><li />
+
+                    </div>
+                    <div class="A3">
+                        <i class="fas fa-envelope"></i>
+                        <li> <a href="mailto:Kantanji2122@gmail.com">Kantanji2122@gmail.com</a></li>
+                    </div>
+                </address>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
+
+

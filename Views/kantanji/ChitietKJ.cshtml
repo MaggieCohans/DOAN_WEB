@@ -1,0 +1,46 @@
+﻿@model DOAN_WEB.Models.KantanjiModel.KANJI
+
+@{
+    ViewBag.Title = "ChitietKJ";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/Content/KantanjiStyle/ChitietKanji.css">
+    <title>KANJI</title>
+</head>
+<body>
+    <div style="margin-top: 150px;" class="container">
+        <div class="Top">
+            <h1>@Html.DisplayFor(model => model.TUKANJI)</h1>
+            <img src="~/Content/img/Kanji/@Model.ANHKANJI">
+        </div>
+
+        <table class="table-container">
+            <tbody>
+                <tr>
+                    <td><b>Cách đọc: @Html.DisplayFor(model => model.AMON)</b></td>
+                    <td>Nghĩa: @Html.DisplayFor(model => model.NGHIA)</td>
+                    <td>Hán Việt: @Html.DisplayFor(model => model.HANVIET)</td>
+                </tr>
+                <tr>
+                    <td>Ví dụ: </td>
+                    <td colspan="2">@Html.DisplayFor(model => model.VIDU)</td>
+                </tr>
+                <tr>
+                    <td>Ý nghĩa: </td>
+                    <td colspan="2">@Html.DisplayFor(model => model.AMKUN)</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <p>
+        @Html.ActionLink("Edit", "Edit", new { id = Model.IDKANJI }) |
+        @Html.ActionLink("Back to List", "ListKJ")
+    </p>
+</body>
+</html>

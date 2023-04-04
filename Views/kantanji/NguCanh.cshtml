@@ -1,0 +1,51 @@
+﻿@model  List<DOAN_WEB.Models.KantanjiModel.NGUCANH>
+@{
+    ViewBag.Title = "NguCanh";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="~/Content/KantanjiStyle/NguCanh.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+</head>
+<body >
+    <div class="NC_list">
+        @foreach (var item in Model)
+        {
+
+            <div class="NC_link">
+
+                <div class="ngucanh">
+
+                    <a href="@Url.Action("ListKJ", "kantanji")" style="text-decoration:none">
+                        <img src="~/Content/img/NguCanh/@item.LINKANH">
+                        <p class="ngucanh_text" style=" color: black;">@item.TENNGUCANH</p>
+                    </a>
+
+                </div>
+
+            </div>
+        }
+        <div class="NC_link">
+            <div class="ngucanh">
+                <a href="#" style="text-decoration:none">
+                    <img src="~/Content/img/NguCanh/plus icon.png" alt="NhaHang">
+                    <p class="ngucanh_text "  style=" color: black;">Thêm chủ đề</p>
+                </a>
+                
+            </div>
+            </div>
+        </div>
+</body>
+</html>

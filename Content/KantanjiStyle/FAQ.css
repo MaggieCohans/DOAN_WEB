@@ -1,0 +1,134 @@
+﻿
+/* FAQ */
+
+.contact {
+    background: url("/Content/img/background.png") center center / cover no-repeat;
+    margin: 50px 0px 50px 0px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.Gop-y {
+    margin-top: 45px;
+    height: 310px;
+    width: 410px;
+    border: 1px solid #006e7b;
+    border-radius: 35px;
+}
+
+.title-1 {
+    padding: 0px 0px;
+    margin: 10px 0px 2px 18px;
+    width: 200px;
+    color: #ff0000;
+    border-bottom: 2px solid #0070c0;
+}
+
+.Name input, .SDT input {
+    margin: 5px 0px 0px 0px;
+    padding: 5px;
+    border: 1px solid #006e7b;
+    width: 170px;
+    font-weight: 600;
+}
+
+.ND-gop-y div {
+    margin: 5px 0px;
+    padding: 0px 5px;
+    border: 1px solid #006e7b;
+    width: 360px;
+    height: 80px;
+    background: white;
+}
+
+.ND-gop-y input {
+    margin: 7px;
+    border: none;
+    outline: none;
+    font-weight: 20px;
+}
+
+.ND-gop-y {
+    margin: 21px 21px 15px 21px;
+}
+
+.inf_content {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.Gop-y button {
+    margin: 0px 168px;
+    padding: 2px 20px;
+    background: #006e7b;
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+    border: 1px solid white;
+    outline: solid;
+    width: 80px;
+    transition: 0.2s ease-in;
+    font-size: 17px;
+}
+
+.lien-he {
+    margin-top: 45px;
+    height: 310px;
+    width: 410px;
+    border: 1px solid #006e7b;
+    border-radius: 35px;
+    display: flex;
+}
+
+.leftside {
+    width: 190px;
+    display: flex;
+    flex-direction: column;
+}
+
+.rightside {
+    width: 230px;
+}
+
+.lien-he h3, .lien-he div {
+    margin-left: 5px;
+    padding: 2px;
+}
+
+.img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.img {
+    width: 99%;
+    margin: 20px 5px 20px 0px;
+}
+
+.A1, .A2, .A3 {
+    display: flex;
+    flex-direction: row;
+}
+
+    .A1 i, .A2 i, .A3 i {
+        color: red;
+        padding: 9px 7px 15px 0px;
+    }
+
+    .A1 li, .A2 li, .A3 li {
+        list-style-type: none;
+    }
+
+    .A1 a, .A2 a, .A3 a {
+        font-weight: bolder;
+        font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+        line-height: 30px;
+        color: #3089ca;
+        text-decoration: none;
+    }
+
+h4 {
+    font-size: 14px;
+}
+/* FAQ - End */

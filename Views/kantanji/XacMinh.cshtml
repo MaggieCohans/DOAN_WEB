@@ -1,0 +1,93 @@
+﻿@model DOAN_WEB.Models.KantanjiModel.THONGTIN
+
+<!--<button class="btn">Tiếp tục</button>-->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog modal-lg" style="opacity: 0.90">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title" style="color:coral; "><b>XÁC THỰC THÔNG TIN</b></h4>
+                </div>
+                <div class="modal-body">
+                    <!---->
+                    <div class="wrapper">
+                        <div class="header">
+                            <h1>受 験 願 書</h1>
+                        </div>
+                        <hr class="hr1">
+                        <div class="footer_1">
+                            <div class="trai">
+                                <img class="image" src="~/Content/img/@Model.ANH">
+                                <hr class="hr2" width="50">
+                                <div class="sbd">
+                                    <h3>SỐ BÁO DANH</h3>
+                                </div>
+                                <div class="daucham">
+                                    <h3>...............</h3>
+                                </div>
+                            </div>
+                            <hr width="1" size="350">
+                            <div class="phai">
+                                <div class="title">
+                                    <b>Thẻ dự thi</b>
+                                </div>
+                                <div class="bodyy">
+                                    <ul class="ul_nav">
+
+                                        <li class="li">(1) Họ và tên:</li>
+                                        <input class="input"
+                                               type="text"
+                                               name="username"
+                                               placeholder="@Model.TEN" />
+
+                                        <li class="li">(2) Năm sinh:</li>
+                                        <input class="input"
+                                               type="text"
+                                               name="countryside"
+                                               placeholder="@Model.NGAYSINH" />
+
+                                        <li class="li">(3) Quê quán:</li>
+                                        <input class="input"
+                                               type="text"
+                                               name="countryside"
+                                               placeholder="@Model.QUEQUAN" />
+
+                                        <li class="li">(4) Số CMND/CCCD:</li>
+                                        <input class="input"
+                                               type="text"
+                                               name="ID"
+                                               placeholder="@Model.CMND_CCCD" />
+
+                                        <li class="li">(5) Cấp độ:</li>
+                                        <input type="radio"
+                                               name="level"
+                                               value="N5">N5
+                                        <input type="radio"
+                                               name="level"
+                                               value="N4">N4
+                                        <input type="radio"
+                                               name="level"
+                                               value="N3">N3
+                                        <input type="radio"
+                                               name="level"
+                                               value="N2">N2
+                                        <input type="radio"
+                                               name="level"
+                                               value="N1">N1
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!---->
+                </div>
+                <div class="modal-footer">
+                    <button href="@Url.Action("Camera", "kantanji")" type="button" id="btn" style="margin:-10px 0px;" target="popup" onclick="window.open('@Url.Action("Camera", "kantanji")','Camera','width=600,height=400')">
+                        <a href="@Url.Action("BaiThiTV", "kantanji")">Vào thi</a>
+                    </button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+

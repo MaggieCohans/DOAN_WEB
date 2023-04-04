@@ -1,0 +1,283 @@
+﻿
+@{
+    ViewBag.Title = "Home";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+
+    @*<link rel="stylesheet" href="lundev.css">*@
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <title>My first Website</title>
+</head>
+<body >
+
+    <div class="header" >
+        <div class="container">
+
+            <!-- Banner-->
+            <div class="row">
+                <div class="col-2">
+                    
+                    <div class="loading">
+                        <span>TRỰC TUYẾN</span>
+                    </div>
+                    
+                    
+                    
+                    <P>
+                        <span style="color:aqua">&#10004;</span> Truy cập Website KANTANJI
+
+                    </P>
+                    <P>
+                        <span style="color:aqua">&#10004;</span>Tạo tài khoản thông tin cá nhân
+
+                    </P>
+                    <P style="margin-bottom: 35px;">
+                        <span style="color:aqua">&#10004;</span> Kiểm tra ngày thi
+                    </P>
+
+                    <!--bUTTON-->
+
+                    
+                    <div class="wrap"  type="button"  class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">
+                        <button  class="button">Chi tiết lịch thi</button>
+                    </div>
+                    <!-- Modal -->
+                    <div class="modal fade" id="myModal" role="dialog">
+                        <div class="modal-dialog modal-lg" style="opacity: 0.90">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    <h4 class="modal-title" style="color:coral; "><b>LỊCH THI CHỨNG CHỈ JLPT 2023</b></h4>
+                                </div>
+                                <div class="modal-body">
+
+                                    <img style="  height:500px; width: 850px; overflow:hidden; " src="~/Content/img/lichthi.jpg">
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--END BUTTON-->
+                </div>
+                <div class="col-2">
+                    <img style="width:250px; height: 450px; object-fit : cover;" src="~/Content/img/cogai-removebg-preview.png">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--lundev-->
+    <!--Title-->
+    <div class="kantanji_heading">
+        <h2 class="kantanji_heading_title">Có ôn thi KANTANJI là đậu</h2>
+        <h4 class="kantanji_heading_subtile">
+            <strong>
+                33,746+
+            </strong>
+            Thí sinh tham gia luyện thi chứng chỉ online + offline
+            <br> Tỉ lệ đỗ
+            <strong>
+                23,722+
+            </strong> thí sinh tham gia luyện
+        </h4>
+    </div>
+    <!--Tab-->
+    <div class="ct_container">
+        <div class="tabs">
+            <div class="tab-header">
+                <button class="active">
+                    GIỚI THIỆU
+                </button>
+                <button>
+                    THANG ĐIỂM
+                </button>
+                <button>
+                    ĐĂNG KÍ TRỰC TIẾP
+                </button>
+                <button>
+                    ĐĂNG KÍ TRỰC TUYẾN
+                </button>
+
+
+
+            </div>
+
+            <div>
+            </div>
+            <div class="tab-content">
+                <div class="active">
+                    <h2 class="title_content">GIỚI THIỆU</h2>
+                    <iframe width="760" height="415" src="https://www.youtube.com/embed/yKFwYR4odRk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <!---->
+                <div>
+                    <h2 class="title_content">THANG ĐIỂM</h2>
+                    <p>
+                    <p>Cách tính điểm JLPT không được <b>Japan Foundation</b> and <b>Japan Foundation</b> and <b>Services</b> công bố trên toàn thế giới, vậy nên, rất nhiều thí sinh không biết xác định cũng như ước chừng điểm số của bản thân. Chính vì vậy, trong bài viết dưới đây KANTANJI sẽ tổng hợp thang điểm và cách tính điểm JLPT dự đoán mới nhất dựa vào đề thi thử, đề thi các năm!</p>
+                    <img src="~/Content/img/thangdiem.jpg">
+                    </p>
+
+                </div>
+                <!---->
+                <div>
+                    <h2 class="title_content">ĐĂNG KÍ TRỰC TIẾP</h2>
+                    <p>
+                    <p>Thí sinh vui lòng đăng ký thi IELTS trực tiếp tại địa chỉ văn phòng IDP dưới đây hoặc tại văn phòng của đối tác IDP ở các tỉnh thành khắp cả nước tại đây.</p>
+                    <p>
+                        <b>TP.HCM:</b>
+                        <br>
+                        - HCMC1: 137 Điện Biên Phủ, Đa Kao, Quận 1, Tp. HCM
+                        <br>
+                        - HCMC2: 148/1 Đ. Hoàng Diệu 2, Phường Linh Chiểu, Thủ Đức, Tp. HCM
+                    </p>
+                    <p>
+                        <b>Lưu ý:</b><br>
+                        Mang theo Bản gốc CMND/CCCC hoặc Hộ chiếu.<br>
+                        Bạn cần mang theo đúng loại giấy tờ tùy thân lúc đăng ký khi vào phòng thi. Nếu có nhu cầu thay đổi, bạn cần thông báo trước với IDP trước ngày thi 1 tuần.
+                    </p>
+                    <p>
+                        <b>Địa điểm thi</b><br>
+                        Thí sinh sẽ được thông báo địa điểm thi Viết ngay khi đăng ký thi (nếu địa điểm đã được xác định). Thời gian và địa điểm thi Nói sẽ được thông báo tại ngày thi chính thức hoặc thí sinh sẽ được thông báo thời gian và địa điểm qua Phiếu báo thi, email hoặc điện thoại.
+                    </p>
+                    </p>
+                </div>
+                <!---->
+                <div>
+                    <h2 class="title_content">ĐĂNG KÍ TRỰC TUYẾN</h2>
+                    <p>
+                    <p><b>Quy trình đăng ký online thi IELTS tại IDP như sau:</b></p>
+                    <p>
+                        1. Truy cập đường link ở dưới
+                        <br>
+                        2. Tạo tài khoản thông tin cá nhân.
+                        <br>
+                        3. Kiểm tra đầy đủ các thông tin cá nhân và thanh toán lệ phí thi bằng thẻ tín dụng hoặc chuyển khoản qua tài khoản ngân hàng.
+                    </p>
+                    <p>
+                        <b>Lưu ý về lệ phí của hai phương thức thi:</b><br>
+                        Online: 4.775.000 VNĐ.
+                        <br>
+                        Online: 4.700.000 VNĐ.
+                    </p>
+                    <p>
+                        <b>Nếu bạn có thắc mắc về quy trình đăng ký trực tuyến, vui lòng gọi hotline:</b> <br>
+
+                        TP Hồ Chí Minh: 19006955 <br>
+                        Hà Nội: 19006955
+                    </p>
+                    </p>
+                    <iframe src="https://drive.google.com/file/d/1eeAKt7mcOCvcAFHbkOR7WyuYIkQgSTna/preview" width="350" height="200">Truy cập để lấy biểu mẫu đăng kí </iframe>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+
+
+    <!--end tab-->
+    <div class="testimonial_brand">
+        <div class="testimonial">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-3">
+                        <i class="fa fa-quote-left"></i>
+
+                        <p>
+                            困難に陥ったときにこそ、そのひとの実力が分かる
+
+                        </p>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-star-half"></i>
+                        </div>
+                        <img style="border-radius: 50px; width:50px; height: 50px; object-fit : cover;" src="~/Content/img/naka.png">
+                        <h3> Nakamura Shozo</h3>
+                    </div>
+
+                    <div class="col-3">
+                        <i class="fa fa-quote-left"></i>
+
+                        <p>
+                            熱意なしに偉大なことが達成されたことはない
+
+                        </p>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-star-half"></i>
+                        </div>
+                        <img style="border-radius: 50px; width:50px; height: 50px; object-fit : cover;" src="~/Content/img/naka.png">
+                        <h3> Okada Taishi</h3>
+                    </div>
+
+                    <div class="col-3">
+                        <i class="fa fa-quote-left"></i>
+
+                        <p>
+                            何事も成功するまでは不可能に思えるものである。
+
+                        </p>
+                        <div class="rating">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star-o"></i>
+                            <i class="fa fa-star-half"></i>
+                        </div>
+                        <img style="border-radius: 50px; width:50px; height: 50px; object-fit : cover;" src="~/Content/img/yuko-takeuchi.jpg">
+                        <h3> Yuko Takeuchi</h3>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--end nhận xét khách hàng-->
+        <!--Logo thương hiệu-->
+        <div class="brand">
+            <div class="small-container">
+                <div class="row">
+
+                    <div class="col-5">
+                        <img src="~/Content/img/jlpt.png">
+                    </div>
+                    <div class="col-5">
+                        <img src="~/Content/img/nas-test-removebg-preview.png">
+                    </div>
+                    <div class="col-5" style="width:95px; height:95px;">
+                        <img src="~/Content/img/topj-removebg-preview.png">
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+        <!--end thương hiệu-->
+    </div>
+
+
+    <!--footer-->
+    <!--Script-->
+    <script src="~/Scripts/KantanjiJS/myjs.js"></script>
+</body>
+</html>
+
